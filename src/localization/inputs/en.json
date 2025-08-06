@@ -1,0 +1,52 @@
+{
+  "defaultInputValidations": {
+    "mixed": {
+      "default": "Field is invalid",
+      "required": "Field is a required field",
+      "defined": "Field must be defined",
+      "notNull": "Field cannot be null",
+      "oneOf": "Field must be one of the following values: {{values}}",
+      "notOneOf": "Field must not be one of the following values: {{values}}",
+      "notType": "Field must match the configured type."
+    },
+    "string": {
+      "length": "Field must be exactly {{length}} characters",
+      "min": "Field must be at least {{min}} characters",
+      "max": "Field must be at most {{max}} characters",
+      "matches": "Field must match the following: \"{{regex}}\"",
+      "email": "Field must be a valid email",
+      "url": "Field must be a valid URL",
+      "uuid": "Field must be a valid UUID",
+      "datetime": "Field must be a valid ISO date-time",
+      "datetime_precision": "Field must be a valid ISO date-time with a sub-second precision of exactly {{precision}} digits",
+      "datetime_offset": "Field must be a valid ISO date-time with UTC \"Z\" timezone",
+      "trim": "Field must be a trimmed string",
+      "lowercase": "Field must be a lowercase string",
+      "uppercase": "Field must be a upper case string"
+    },
+    "number": {
+      "min": "Field must be greater than or equal to {{min}}",
+      "max": "Field must be less than or equal to {{max}}",
+      "lessThan": "Field must be less than {{less}}",
+      "moreThan": "Field must be greater than {{more}}",
+      "positive": "Field must be a positive number",
+      "negative": "Field must be a negative number",
+      "integer": "Field must be an integer"
+    },
+    "date": {
+      "min": "Field field must be later than {{min}}",
+      "max": "Field field must be at earlier than {{max}}"
+    },
+    "boolean": {
+      "isValue": "Field field must be {{value}}"
+    },
+    "object": {
+      "noUnknown": "Field field has unspecified keys: {{unknown}}"
+    },
+    "array": {
+      "min": "Field field must have at least {{min}} items",
+      "max": "Field field must have less than or equal to {{max}} items",
+      "length": "Field must have {{length}} items"
+    }
+  }
+}
